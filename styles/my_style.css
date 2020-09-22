@@ -1,0 +1,139 @@
+.topo {
+	
+	background:pink;
+}
+.number {
+	padding-left: 15px;
+	padding-top:10px;
+}
+
+body {font-family: 'Poppins', sans-serif}
+
+.cor1 {color: #022e4a !important}
+.cor1 {color: #0345B3 !important}
+.caption {color: #b2375c !important;}
+.number_police {color: #12a512;}
+.font_destak {font-weight:bold !important;}
+
+.main-navbar .navbar {height: auto}
+
+.navbar-brand .vereador-txt {font-size: 1rem; font-weight: bold; display: block; line-height: 1.4}
+.navbar-brand .name {font-size: 1.9rem; font-weight: bold; display: block; line-height: 1.1}
+.navbar-brand .num {color: #68c1ec; font-size: 1.3rem; font-weight: bold; display: block; line-height: 1.4}
+
+.menu li a {font-size: 16px; font-weight: 700; text-transform: uppercase}
+
+.candidato h2 {font-weight: 700; font-size: 60px; line-height: 0.8}
+.candidato .txt {font-weight: 700; font-size: 20px; text-transform: uppercase; letter-spacing: 6px}
+
+.block {position: absolute; top:0; left: -15px; right: -15px; bottom: 0; background: transparent}
+
+.bg-topo-bloc {background: #2b3b88}
+.bg-topo-bloc2 {background: #fff url("../../images/site/fundo-topomodelo3-dc.jpg") no-repeat; background-size: cover}
+
+.num-bloc span {font-weight: 700; font-size: 25px; text-transform: uppercase; line-height: 1.1; letter-spacing: 6px}
+.num-bloc strong {color: #68c1ec; font-weight: 700;  font-size: 50px}
+.num-bloc strong {color: #12a512; font-weight: 700;  font-size: 50px}
+
+body {font-family: 'Lato', sans-serif;}
+
+.main {padding-top: 102px}
+
+.menu-topo li a {font-weight: bold}
+
+.bg-introduction {color: #fff; position: relative; background: url("../images/topo/bg-topo.png") no-repeat; background-size: cover}
+.bg-introduction:before {content: ""; background: rgba(19, 21, 26, 0.35); position: absolute; top:0; left: 0; width: 100%; height: 100%}
+
+.introduction strong {font-weight: 900; letter-spacing: 9.8px; text-transform: uppercase}
+.introduction span {font-weight: 900; letter-spacing: 9.8px; text-transform: uppercase}
+.introduction h3 {font-weight: 900; font-size: 5rem}
+.introduction h2 {font-weight: 900; font-size: 5rem}
+
+.social h3 {font-weight: 900; font-size: 2rem}
+
+
+/* Projetos de Campanha */
+.bg-projetos {background: #f7f7fc}
+
+.mb-grid-gutter { height: 290px; perspective: 1000px;}
+.mb-grid-gutter-inner {position: relative; height: 100%; transition: transform 0.6s; transform-style: preserve-3d;}
+
+.mb-grid-gutter:hover .mb-grid-gutter-inner {transform: rotateY(180deg);}
+
+.card-hover {border-radius: 1rem; border: 1px solid transparent; position: absolute; width: 100%; height: 100%; backface-visibility: hidden; transition: border-color 0.2s ease-in-out,box-shadow 0.2s ease-in-out;}
+.card-hover:hover { cursor: pointer; border: 1px solid rgba(118,109,244,0.35) !important;}
+
+.card-back {transform: rotateY(180deg); }
+
+/*fim*/
+
+.icon {display: inline-block; padding: 10px; border-radius: 100%}
+
+.time-line {border: 1px solid transparent}
+.time-line:before {content: ""; width: 2px; height: 100%; background: #ebebeb; position: absolute; top:0; right: 50%;}
+
+.point:before {content: ""; width: 24px; height: 24px; background: #fff; border: 2px solid #766df4; border-radius: 100%; position: absolute; top:0; right: -11px;}
+.point2:before {content: ""; width: 20px; height: 20px; background: #fff; border: 2px solid #766df4; border-radius: 100%; position: absolute; top:0; left: -11px;}
+
+
+.instagram {background: linear-gradient(54deg, deeppink, yellow, lime)}
+
+.contador {}
+
+.menu a i {display: block; margin-bottom: 4px}
+.menu a:hover {text-decoration: none !important; background: #f2f2f2;}
+
+.image_bottom {
+	border-bottom-left-radius: 0.625rem;
+  	border-bottom-right-radius: 0.625rem;
+}
+.font-photos {
+	font-size: 7px;
+}
+.right_top {
+	position: absolute;
+	top:5px;
+	right: 5px;
+	color: #fff;
+
+}
+
+@media (max-width: 768px) {
+
+	.navbar-icon-mobile {display: none !important;}
+
+	.candidato {margin-top: 10px; padding: 0 40px}
+	.candidato .txt, .num-bloc span {font-size: 15px}
+	.candidato h2 {font-size: 25px}
+	.num-bloc strong {font-size: 25px; line-height: 1.1;}
+}
+@media (max-width: 650px) {
+
+	.nome-vereador {display: none !important;}
+	.navbar-mobile {flex-flow: nowrap !important;}
+	.logo-pl {justify-content: flex-end; padding-right: 25px}
+}
+.descricao_pa b {
+	font-weight: bold;
+}
+.assinatura {
+	font: italic 22px 'Sacramento';
+    color:#000 !important;
+}
+.face_pa, .insta_pa {
+	position: absolute;
+	right: 70px;
+	bottom: 0;
+	font-size: 40px;
+	color: #1776d6;
+}
+.face_pa:hover{
+	color:#0345B3;
+}
+.insta_pa {
+	right: 30px;
+	color: #A234AC;
+}
+.insta_pa:hover {
+	color: purple;
+}
