@@ -2,7 +2,7 @@
 	
 	background:pink;
 }
-.number {
+.number_pa {
 	padding-left: 15px;
 	padding-top:10px;
 }
@@ -136,4 +136,445 @@ body {font-family: 'Lato', sans-serif;}
 }
 .insta_pa:hover {
 	color: purple;
+}
+
+.menu_bottom div a {
+	color: #666 !important;
+}
+.menu_bottom div a:hover {
+	background: #d4e6f7 !important;
+	color:#333 !important;
+	
+}
+.close_project {
+	font-size: 18px;
+}
+.information_about_project b {
+	font-weight: bold;
+}
+.container_information_projects {
+	text-align: right;
+}
+.information_project {
+	font-size: 20px;
+	color: blue;
+}
+.urna {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.625rem;
+}
+.type, .vote_to,.numbers,.number,.container_information_keys,.candidato_photo, .aux_number,.aux_choice, .information_about_urna,.fim,.votou,.nova_simulacao,.voto_em_branco {
+	position: absolute;
+	z-index: 100 !important;
+	color: #333;
+}
+.type {
+	top: 23%;
+	left: 12%;
+	width: 30%;
+	font-size: 22px;
+	padding: 0;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+	font-weight: 400;
+	letter-spacing: 1.5px;
+}
+.vote_to {
+	
+	top: 17%;
+	left: 4%;
+	font:bold 15px arial;
+}
+.number {
+	top: 39%;
+	left: 2%;
+	font:normal 15px arial;
+}
+.party {
+	top:60%;
+}
+.urna .name {
+	top:48%;
+}
+.numbers {
+	
+	top: 38%;
+	left: 12%;
+	width: 155px;
+	padding: 0;
+	margin: 0 !important;
+	list-style: none;
+	padding-top: 5px;
+	padding-bottom: 5px; 
+}
+.numbers li {
+
+	display: inline;
+	height: 20%;
+	width: 15%;
+    font-size: 25px;
+    padding: 1px 6px;
+    border: 1px solid #666;
+    margin-right: 0px !important;
+	text-align: left !important;    
+}
+.numbers li.last {
+	margin-right: 0px !important
+}
+.container_information_keys {
+	left: 3.1%;
+	top:74%;
+	width: 58.6%;
+	border-top: 2px solid #333;
+
+}
+/*@media (max-width: 380px) {
+	.vote_to {
+		font-size: 6px !important;
+	}
+	.type {
+		font-size: 10px !important;
+	}
+	.number {
+		font-size: 5px !important;	
+	}
+	.numbers {
+		width: 180px;
+	}
+	.numbers li {
+
+		font-size: 12px;
+		padding: 1px 4px;
+		
+	}
+	.container_information_keys {
+		
+	}
+	.container_information_keys .pull_key {
+		font-size: 5px !important;
+	}
+	.fim {
+		font:normal 60px arial !important;
+	}
+	.nova_simulacao {
+		font-size: 5px !important;
+	}
+	.votou {
+		font-size: 12px !important;
+	}
+	.voto_em_branco {
+		font-size: 14px !important;
+	}
+
+}*/
+
+.pull_key {
+	font:bold 13px arial;
+	padding-left: 0.5%;
+	padding-bottom: 0.6%;
+	display: block;
+}
+.confirm_key {
+	padding-left: 5%;
+}
+.rectify_key {
+	padding-left: 10%;
+}
+.candidato_photo {
+	top:12%;
+	left:49.5%;
+	width: 12%;
+}
+.container_number_votes {
+
+	top:25%;
+	left:70%;
+	width: 22%;
+	
+}
+.aux_number,.aux_choice {
+
+	height: 10%;
+	width: 5.7%;
+	background: transparent;
+	color: transparent;
+
+}
+.number_1, .number_2, .number_3  {
+	top:25%;
+}
+.number_4, .number_5, .number_6  {
+	top:39%;
+}
+.number_7, .number_8, .number_9  {
+	top:53%;
+}
+.number_1, .number_4, .number_7  {
+	left: 70.7%;
+}
+.number_2, .number_5, .number_8, .number_0  {
+	left: 78%;
+}
+.number_3, .number_6, .number_9  {
+	left: 85.5%;
+}
+.number_0 {
+	top:66%;
+}
+.branco, .corrige, .confirma {
+	height: 9.2%;
+	top: 78.7%;
+	left: 67.4%;
+	width: 7.8%;
+}
+.corrige {
+	left:77%;
+}
+.confirma {
+	top: 76.1%;
+	height: 11.6%;
+	left: 86.7%;
+}
+.active_number {
+
+}
+.none {
+	display: none;
+}
+.information_about_urna {
+	top:2%;
+	left: 6%;
+	width: 50%;
+	background: #f7ebaa;
+	color:#333;
+	padding: 2px;
+}
+.audio_tecla, .audio_confirma,.audio_confirma_parcial {
+	position: absolute;
+	top:0;
+	right:0;
+	visibility:hidden;
+}
+.fim {
+	top:26%;
+	left: 18%;
+	font:normal 160px arial;
+}
+.votou {
+	font:normal 35px arial;
+	top:77%;
+	left: 48%;
+	color:#acacac;
+}
+.voto_em_branco {
+	font:normal 36px arial;
+	top:40%;
+	left: 18%;
+}
+.nova_simulacao {
+	top:77%;
+	left: 26%;
+	color:blue;
+	font-size: 15px;
+	text-decoration: underline;
+}
+#show_orientation {
+	position: absolute;
+	z-index: 100;
+	top: 0%;
+	left:56%;
+	width: 30%;
+}
+#show_orientation img {
+	width: 20% !important;
+}
+
+
+@media (max-width: 945px) { 
+	.vote_to {
+		font-size: 12px;
+	}
+	.type {
+		font-size: 16px;
+	}
+	.number {
+		font-size: 14px;	
+	}
+	.numbers {
+		width: 180px;
+	}
+	.numbers li {
+
+		font-size: 22px;
+		padding: 1px 5px;
+		
+	}
+	.container_information_keys .pull_key {
+		font-size: 9px !important;
+	}
+	.fim {
+		font:normal 120px arial !important;
+	}
+	.nova_simulacao {
+		font-size: 10px !important;
+	}
+	.votou {
+		font-size: 25px !important;
+	}
+	.voto_em_branco {
+		font-size: 28px !important;
+	}
+}
+
+@media (max-width: 740px) { 
+	.vote_to {
+		font-size: 10px;
+	}
+	.type {
+		font-size: 14px;
+	}
+	.number {
+		font-size: 10px;	
+	}
+	.numbers {
+		width: 180px;
+	}
+	.numbers li {
+
+		font-size: 18px;
+		padding: 1px 5px;
+		
+	}
+	.container_information_keys {
+		
+	}
+	.container_information_keys .pull_key {
+		font-size: 8px !important;
+	}
+	.fim {
+		font:normal 90px arial !important;
+	}
+	.nova_simulacao {
+		font-size: 9px !important;
+	}
+	.votou {
+		font-size: 20px !important;
+	}
+	.voto_em_branco {
+		font-size: 22px !important;
+	}
+}
+
+
+@media (max-width: 580px) { 
+	.vote_to {
+		font-size: 9px !important;
+	}
+	.type {
+		font-size: 13px !important;
+	}
+	.number {
+		font-size: 8px !important;	
+	}
+	.numbers {
+		width: 180px !important;
+	}
+	.numbers li {
+
+		font-size: 15px !important;
+		padding: 1px 4px !important;
+		
+	}
+	.container_information_keys .pull_key {
+		font-size: 7px !important;
+	}
+	.fim {
+		font:normal 80px arial !important;
+	}
+	.nova_simulacao {
+		font-size: 7px !important;
+	}
+	.votou {
+		font-size: 18px !important;
+	}
+	.voto_em_branco {
+		font-size: 18px !important;
+	}
+}
+
+@media (max-width: 480px) {
+	.vote_to {
+		font-size: 6px !important;
+	}
+	.type {
+		font-size: 10px !important;
+	}
+	.number {
+		font-size: 5px !important;	
+	}
+	.numbers {
+		width: 180px !important;
+	}
+	.numbers li {
+
+		font-size: 12px !important;
+		padding: 1px 4px !important;
+		
+	}
+	
+	.container_information_keys .pull_key {
+		font-size: 5px !important;
+	}
+	.fim {
+		font:normal 60px arial !important;
+	}
+	.nova_simulacao {
+		font-size: 5px !important;
+	}
+	.votou {
+		font-size: 12px !important;
+	}
+	.voto_em_branco {
+		font-size: 14px !important;
+	}
+
+}
+
+
+@media (max-width: 380px) {
+	.vote_to {
+		font-size: 5px !important;
+	}
+	.type {
+		font-size: 6px !important;
+	}
+	.number {
+		font-size: 6px !important;	
+	}
+	.numbers {
+		margin-left:12px !important;
+		width: 180px !important;
+	}
+	.numbers li {
+		font-size: 12px !important;
+		padding: 1px 4px !important;	
+	}
+	.container_information_keys .pull_key {
+		font-size: 3px !important;
+	}
+	.fim {
+		font:normal 60px arial !important;
+	}
+	.nova_simulacao {
+		font-size: 5px !important;
+	}
+	.votou {
+		font-size: 12px !important;
+	}
+	.voto_em_branco {
+		font-size: 6px !important;
+	}
+
 }
