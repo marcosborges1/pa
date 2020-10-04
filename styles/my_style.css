@@ -188,15 +188,15 @@ body {font-family: 'Lato', sans-serif;}
 	font:bold 15px arial;
 }
 .number {
-	top: 39%;
-	left: 2%;
+	top: 41%;
+	left: 4%;
 	font:normal 15px arial;
 }
-.party {
-	top:60%;
+#urna .party {
+	top:65% !important;
 }
-.urna .name {
-	top:48%;
+#urna .name {
+	top:55% !important;
 }
 .numbers {
 	
@@ -269,6 +269,16 @@ body {font-family: 'Lato', sans-serif;}
 	}
 
 }*/
+
+.block_urna {
+	position: absolute;
+	top:23%;
+	left:66%;
+	height: 69%;
+	z-index: 500;
+	width: 30%;
+	background: transparent;
+}
 
 .pull_key {
 	font:bold 13px arial;
@@ -512,7 +522,8 @@ body {font-family: 'Lato', sans-serif;}
 		font-size: 10px !important;
 	}
 	.number {
-		font-size: 5px !important;	
+		top:44% !important;
+		font-size: 7px !important;	
 	}
 	.numbers {
 		width: 180px !important;
@@ -543,7 +554,7 @@ body {font-family: 'Lato', sans-serif;}
 }
 
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
 	.vote_to {
 		font-size: 5px !important;
 	}
@@ -551,6 +562,9 @@ body {font-family: 'Lato', sans-serif;}
 		font-size: 6px !important;
 	}
 	.number {
+		
+		top:46%;
+		left: 6%;
 		font-size: 6px !important;	
 	}
 	.numbers {
@@ -576,5 +590,15 @@ body {font-family: 'Lato', sans-serif;}
 	.voto_em_branco {
 		font-size: 6px !important;
 	}
-
+}
+@media screen and (orientation: landscape) {
+  #show_orientation {
+    display: none;
+  }
+}
+.contact_whats {
+	color: #fff;
+}
+.contact_whats:hover {
+	color: green;
 }
