@@ -80,63 +80,6 @@
                           </div>
                       </div>
                   </div>
-
-                  <div class="page-header row no-gutters py-4" id="simulador">
-                      <div class="col-12 col-sm-12 text-center text-sm-left mb-0">
-                          <h3 class="page-title">Simulador de voto do PA</h3>
-                      </div>
-                  </div>
-                  <div class="row" id="urna" style="margin-top:10px;position: relative;">
-                        <i id="show_orientation"><img src="images/content-management/rotate.png" ></i>
-                        <audio class="audio_tecla" controls preload="none"> 
-                             <source src="audio/tecla_urna.m4a" type="audio/mp4">
-                        </audio>
-                        <audio class="audio_confirma_parcial" controls preload="none"> 
-                             <source src="audio/confirma_parcial.m4a" type="audio/mp4">
-                        </audio>
-                        <audio class="audio_confirma" controls preload="none"> 
-                             <source src="audio/confirma.m4a" type="audio/mp4">
-                        </audio>
-                        <div class="fim none">
-                            FIM
-                        </div>
-                        <span class="votou none">VOTOU</span>
-                        <a href="." class="nova_simulacao none">Treinar o voto de novo</a>
-
-                        <div class="information_about_urna none">Simulador de voto PA (22333). Aviso: contém apenas o seu número como referência.</div>
-                        <div class="vote_to none">SEU VOTO PARA</div>
-                        <div class="type">Vereador</div>
-                        <div class="number none">Número:</div>
-                        <ul class="numbers">
-                            &nbsp;
-                        </ul>
-                        <div id="type_name" class="number name">&nbsp;</div>
-                        <div id="partido_name" class="number party">&nbsp;</div>
-                        <div class="voto_em_branco none">VOTO EM BRANCO</div>
-                        <div class="container_information_keys none">
-                            <span class="pull_key">Aperte a tecla</span>
-                            <span class="pull_key confirm_key">CONFIRMA para CONFIRMAR este voto</span>
-                            <span class="pull_key rectify_key">CORRIGE para REINICIAR este voto</span>
-                        </div>
-                        <img id="vereador22333" class="candidato_photo none" src="images/avatars/candidato_pa.jpg">
-                        <img id="prefeito40" class="candidato_photo none" src="images/avatars/dinair.jpg">
-                        
-                        <input type="button" class="aux_number number_1" name="" value="1"/>
-                        <input type="button" class="aux_number number_2" name="" value="2"/>
-                        <input type="button" class="aux_number number_3" name="" value="3"/>
-                        <input type="button" class="aux_number number_4" name="" value="4"/>
-                        <input type="button" class="aux_number number_5" name="" value="5"/>
-                        <input type="button" class="aux_number number_6" name="" value="6"/>
-                        <input type="button" class="aux_number number_7" name="" value="7"/>
-                        <input type="button" class="aux_number number_8" name="" value="8"/>
-                        <input type="button" class="aux_number number_9" name="" value="9"/>
-                        <input type="button" class="aux_number number_0" name="" value="0"/>
-                        <input type="button" class="aux_choice branco" name="" value="&nbsp;"/>
-                        <input type="button" class="aux_choice corrige" name="" value="&nbsp;"/>
-                        <input type="button" class="aux_choice confirma" name="" value="&nbsp;"/>
-                        <img class="urna" src="images/content-management/urna.jpg" />
-                        <div class="block_urna none">&nbsp;</div>
-                  </div>
                   <div class="page-header row no-gutters py-4"id="quem_sou_eu" >
                       <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                           <h3 class="page-title">Quem sou eu</h3>
@@ -179,7 +122,7 @@
                           <p class="card-text d-inline-block mb-3 text-justify">Candidato-me pois considero a política importante. <br/> Apesar que hoje a política tem vários significados, inclusive de roubalheira e ineficiência, acredito que podemos mudar essas ideias com sementes bem plantadas, baseadas em ideologias práticas que lutam pelos direitos do cidadão timonense. 
                           <br/>
                           Nossa cidade, Timon, precisa de políticos novos, com visões diferentes, e que possam ter representações ativas e com prestações de contas. <br/>
-                          Abaixo, seguem algumas das minhas propostas!
+                          <!-- Abaixo, seguem algumas das minhas propostas! -->
 
                           </p>
                           <span class="text-muted assinatura" id="propostas">PA</span>
@@ -380,14 +323,12 @@
                   <div class="row">
                       <script type="text/javascript">
                           [...Array(12).keys()].map(i => document.write(`<div class="col-lg-2 col-md-2 col-sm-2 col-4 mb-2">
-                    <div class="card card-small card-post card-post--1 wow bounceInRight
-
-">
+                    <div class="card card-small card-post card-post--1 wow bounceInRight">
                       <a data-fancybox="gallery" href="images/photos/${i + 1}.jpg" class="group card-post__image image_bottom" style="background-image: url('images/photos/${i + 1}_thumb.jpg');">
                       </a>
                       <i class="fas fa-camera right_top"></i>
                     </div>
-                  </div>`))
+                  </div>`));
                       </script>
                   </div>
 
@@ -407,7 +348,7 @@
                       
                       const videos = [
                         {url:"https://youtu.be/9zWuHg99lS4", foto:"9zWuHg99lS4"}
-                      ]
+                      ];
 
                       videos.map(v=> document.write(`
                         <div class="col-lg-3 col-md-4 col-6 col-sm-6 mb-12">
@@ -418,13 +359,14 @@
                                 </a>
                                 <i class="fab fa-youtube right_top"></i>
                             </div>
-                        </div>`))
+                        </div>`));
                     </script>
                   </div>
                   <div class="row">
-                    <div  class="col-12 alert alert-success alert-dismissible fade show mb-0 text-center" role="alert" style="margin-top:10px;">
+                    <div  class="col-12 alert alert-success alert-dismissible fade show mb-0 text-center" role="alert" style="margin-top:10px;padding:0;padding-top:3px;padding-bottom: 3px;">
+                      Pedro Auusto (PA), candidato a vereador de Timon-MA. CNPJ: 38.802.673/0001-38.<br/>
                       <i class="fa fa-check mx-2"></i>
-                      Desenvolvido por Marcos Tecnologia. Based on Shards. Copyright 2020. <!-- Contato:
+                      Desenvolvido por Vinícius Tecnologia. Based on Shards. Copyright 2020. <!-- Contato:
                       <a href="#" class="contact_whats"><i style="font-size:19px;" class="fab fa-whatsapp-square"></i></a> -->
                     </div>
                   </div>
@@ -456,7 +398,6 @@
                                         <i class="fab fa-youtube"></i>
                                         Vídeos
                                     </a>
-
                                 </div>
                             </div>
                         </div>
@@ -473,9 +414,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
           integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
           crossorigin="anonymous"></script>
-  
   <script src="scripts/wow.min.js"></script>
-  <script src="scripts/app/my_script.js"></script>
   <script type="text/javascript">
       $(".group").fancybox({
           'transitionIn': 'elastic',
@@ -485,7 +424,6 @@
           'overlayShow': false
       });
       new WOW().init();
-      setInterval(function(){ $(".active_number").fadeOut(500).fadeIn(500) }, 1000);
   </script>
 
 </body>
